@@ -32,6 +32,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
 
     public override void OnCreatedRoom()
     {
+        PhotonNetwork.GetRoomList();
         Debug.Log(PhotonNetwork.CurrentRoom.Name);
 
     }
